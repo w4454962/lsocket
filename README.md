@@ -10,3 +10,8 @@
 
 lua版本为5.3 在 lua.cpp里为动态接口 
 
+
+
+项目来自 https://github.com/cloudwu/lsocket   
+
+解决原本编译不过的问题。
