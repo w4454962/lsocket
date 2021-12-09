@@ -7,7 +7,7 @@ mkdir Release
 
 %cc% -c lsocket.c win_compat.c lua/lua.cpp -Ilua
 
-%cc% -shared -o Release/lsocket.dll lsocket.o win_compat.o lua.o -Wl,--kill-at,--out-implib,Release/lsocket.lib -lws2_32 -lstdc++ -shared -static -m32
+%cc% -o Release/lsocket.dll lsocket.o win_compat.o lua.o -Wl,--kill-at,--out-implib,Release/lsocket.lib -lws2_32 -lstdc++ -shared -static -m32
 
 
 del *.o /q;
