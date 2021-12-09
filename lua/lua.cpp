@@ -1,6 +1,11 @@
-#include "lua.hpp"
 #include <windows.h>
 #include <vector>
+
+extern "C" {
+	#include "lua.h"
+	#include "lualib.h"
+	#include "lauxlib.h"
+}
 
 /*
 该文件的作用是为了处理 动态加载lua时， 宿主存在多个lua模块 并且不同名字混乱的问题。
